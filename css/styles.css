@@ -1,0 +1,400 @@
+
+
+*  {
+	padding:0;
+	margin:0;
+}
+
+*  {
+	padding:0;
+	margin:0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+li{
+	list-style: none;
+}
+.width{
+	color:red;
+}
+
+body {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:100%;
+}
+colors{
+	background:#680002;/*darkred*/
+	background:#b7f2f6;/*lightblue*/
+	background:#ffef4f;/*yellow*/
+	border-top: 9px solid #992606;/*med-red*/
+	border-bottom:  19px solid #ffef4f;/*yellow*/
+
+}
+
+#wrapper {
+	 max-width:1400px;
+	 width:90%;
+	 margin:2px auto ;
+	 background-color:white;
+
+	 min-width:300px;
+	}
+
+.nav {
+	display:none;
+}
+
+#home_container {
+ 	width:80%;
+ 	margin:0 auto;
+ 	background:#ccc;
+ 	border-radius: 15px;
+ 	border: 5px solid black;
+ 	padding: 2%;
+ }
+
+
+
+ /* width:74.468085%  this is three-fourths*/
+/* width:31.914893%  this is one third*/
+/* width:48.936170%  this is one half*/
+/* width:23.404255%  this is one fourth*/
+/* 14.893617%  this is one eighth*/
+/* width:65.957446%  this is two-thirds*/
+
+
+header {
+	width:100%;
+	margin-top:1px;
+	margin: auto;
+	overflow:none;
+	display: block;
+}
+
+#header-left {
+	/*width:940px;*/
+
+	width:60% ;
+	float:left;
+
+}
+
+#logo-img  {
+	float:left;
+	max-width:100%;
+	min-width:350px;
+	/*background: green;*/
+	background: url(../images/logo-bg.gif) no-repeat;
+	background-position: center;
+	background-size: contain;
+	overflow: hidden;
+	position: relative;
+	left:0px;
+	right:0px;
+
+
+	}
+#logo-img img, w-sample img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.shad {
+		z-index: 3;
+		position: relative;
+		opacity: .1;
+		top:0px;
+		left:0px;
+}
+#sun {
+	z-index:240;
+	position: absolute;
+	top:-250px;
+	left:0;
+	opacity: 0.15;
+}
+#sun img{
+	z-index:240;
+
+}
+
+#logotextbox {
+	width:38%;
+	float:right;
+
+  float:right;
+	background:#680002;/*darkred*/
+ 	background:#b7f2f6;/*lightblue*/
+	background:#ffef4f;/*yellow*/
+	background: none;
+
+ 	overflow:hidden;
+	border-top: 9px solid #992606;/*med-red*/
+	border-bottom:  19px solid #ffef4f;/*yellow*/
+}
+#contact-b {
+	width:38%;
+	float:right;
+	/*background: #fff9a6;*/
+}
+#contact-b li {
+
+}
+
+#contact-b li.t-alignright h3{
+	text-align: right;
+	background: url(../images/men-bg.gif) no-repeat;
+	background-position: right;
+	background-size: contain;
+	text-transform: capitalize;
+  font-variant: small-caps;
+  color: white;
+	margin-top: 2%;
+  padding-right:2%;
+  font-size: 1.6em;
+  line-height: 1.6em;
+  padding-top: 1%;
+}
+
+
+#intro {
+	width: 70%;
+	margin:20px auto 20px auto;
+	overflow: auto;
+	background: url(../images/bg-intro-f.gif) no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+#intro h1 {
+	z-index: 2;
+	font-size: 200%;
+	padding: 12% 12% 12% 16%;
+}
+
+/*#intro img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+.f-right {
+	float:right;
+	display: inline-block;
+	width: 20%;
+}
+
+.f-left {
+	float:left;
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+}
+
+#intro h2{
+	position:absolute;
+	top:30%;
+	left:20%;
+	z-index: 3;
+	margin:auto;
+	width:50%;
+
+}
+
+.explosion{
+	position:relative;
+	width: 100%;
+	z-index: 1;
+	margin: auto;
+}
+
+#length{
+	display: block;
+	clear:both;
+	width: 50%;
+	margin: auto;
+	font-size: 160%;
+}
+
+#menu-fixed{
+	position:fixed;
+	max-width: 40%;
+	min-width: 300px;
+	top:0;
+	right:0;
+	z-index: 99;
+}
+#res-cont{
+	float:right;
+	max-width: 40%;
+	min-width: 300px;
+}
+
+#tools{
+	display: block;
+	clear:both;
+	width: 100%;
+}
+/* **********************work Sample styles **********/
+sample-box{
+	width:100%;
+}
+#w-sample-c{
+	float:left;
+	width:49%;
+	background: url(../images/bg-sanple-c.gif) no-repeat;
+	min-height: 400px;
+
+	transition: background 0.2s ease,
+              padding 0.8s linear;
+	transition-duration: .5s;
+}
+
+
+#w-sample-wp{
+	float:right;
+	width:49%;
+	background: url(../images/bg-sample-wp.gif) no-repeat;
+	overflow: hidden;
+	background-size:100% 100% !important;
+	transition: background 0.4s ease,
+              padding 0.8s linear;
+	transition-duration: .5s;
+}
+
+#w-sample-a{
+	max-width: 100%;
+	float:left;
+	width:49%;
+	overflow: hidden;
+	transition: background 0.2s ease,
+							padding 0.8s linear;
+	transition-duration: .5s;
+}
+
+.sample-img{
+	position: relative;
+	width: 100%;
+  transition:width 0.5s ease;
+}
+
+
+.sample-img h2{
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+	text-align: left;
+
+}
+.sample-img h2 span {
+   color: white;
+   letter-spacing: -1px;
+   background: rgb(104, 0, 2); /* fallback color */
+   background: rgba(104, 0, 2, 0.7);
+   padding: 10px;
+	 font-size: 1.2em;
+}
+
+.sample-img:hover {
+		cursor:crosshair;
+    text-decoration: none;
+		transform: scale(1.5);
+}
+/*.bg-scale:hover {
+
+    text-decoration: none;
+    image-size: 120%!important;
+		transform: scale(.5);
+
+
+}*/
+
+/* **********************work Sample styles **********/
+ h2 {
+ 	font-size:1.9em;
+ 	line-height:1.3em;
+ 	text-transform:capitalize;
+  font-variant:small-caps;
+  text-align: center;
+ }
+ h3 {
+ 	text-transform:capitalize;
+  font-variant:small-caps;
+ 	text-align:left;
+ 	color:black;
+ 	padding-left:5%;
+	padding-right:5%;
+ 	font-size: 1.6em;
+ 	line-height:1.4em;
+ 	padding:7%;
+ }
+  h5  {
+	text-transform:capitalize;
+  font-variant:small-caps;
+  color:white;
+  font-size:1.2em;
+ }
+
+
+ h5:hover, nav ul li.nav-on a   {
+  		/*text-transform:capitalize;
+     font-variant:small-caps;
+     color:black;
+     font-size:1.4em;
+     text-decoration: underline;*/
+    }
+img {
+	display:inline;
+	max-width:100%;
+
+	z-index: 1;
+}
+
+#bio {
+	/*width:300px;*/
+	width:31.914893%;
+	float:right;
+}
+
+#main-home  {
+	/*width:620px;*/
+	width:100%;
+	margin:20px auto ;
+}
+#prosection  {
+	/*width:620px;*/
+	width:100%;
+	background:black;
+	margin:0px auto ;
+}
+
+#social  {
+margin: 5% auto;
+width:23.404255%;
+}
+
+#social ul li,#social1 ul li {
+
+	 list-style-type:none;
+}
+
+#social ul li a{
+	 text-decoration:none;
+}
+
+#social1  {
+margin: 5px auto;
+width:23.404255%;
+
+}
+
+#resume {
+	margin:0 auto;;
+}

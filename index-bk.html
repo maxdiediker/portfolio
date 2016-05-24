@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>loemseex</title>
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" >
+<link rel="stylesheet" type="text/css" href="css/media.css" >
+
+
+<!-- Add jQuery library -->
+<SCRIPT type="text/javascript"
+        src="http://code.jquery.com/jquery-latest.js"></SCRIPT>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+	<!---    FLEXSLIDER-->
+
+
+
+
+  <script>
+
+  $(document).ready(function(){
+
+
+		$('.shad').hide();
+		$('.shad').fadeIn(4000);
+		// $('#sun').hide();
+	  // $('#sun').fadeIn(2000);
+
+
+  $("#sun").animate({
+      "top": "+=500px",
+			"opacity": ".5"
+			},
+          3000,function(){
+
+					});
+
+ });
+
+  </script>
+
+
+  </head>
+
+<body>
+  <div id ="wrapper">
+    <header>
+      	  <div id="header-left">
+      	  	 <div id="logo-img">
+   						 <!-- <div class="shad"> -->
+                <!-- <img src="images/logo-sun-shad.gif" class="shad" alt="shadow"> -->
+
+								<div class="shad">
+   								<img src="images/logo-bg-shad.gif" class="shad" alt="shadow">
+								</div>
+										<div id ="sun">
+                  <img src="images/logo-bg-sun.gif"   alt="sun">
+									 </div>
+             </div><!--end logo-img-->
+           </div> <!--end header-left-->
+
+             <div id = "res-cont">
+               <img src="images/res-cont.gif" alt="fixed image">
+             </div><!--end menu-fixed-->
+          	  <div id = "logotextbox">
+                  <h3><b>Max Diediker</b><br>Front-End Developer<br>Designer </h3>
+                </div> <!--end logotextbox-->
+
+
+
+
+   </header><!--header inner-->
+	 <div id = "intro">
+		 <img src="images/bg-explose1.gif" class="explosion" alt="explosion">
+		 <h2>Hello, my name is Max Diediker, thanks for checking out my portfolio website. <br> I am a Seattle area website front end developer, designer and illustrator.</h2>
+
+
+	 </div>
+	 <div id = "w-sample" class="bg-scale">
+		 <a href="front.html"><h3 >code examples</h3><span class="topic-name">o absolute as it can help you position an element anywhere relative to the document</span></a>
+	 	 </div>
+		 <!-- end w-sample -->
+	 <div id = "length">
+		 <p>The fixed value is similar to absolute as it can help you position an element anywhere relative to the document, however this value is unaffected by scrolling. See the child element in the demo below and how, once you scroll, it continues to stick to the bottom of the page:
+			 The fixed value is similar to absolute as it can help you position an element anywhere relative to the document, however this value is unaffected by scrolling. See the child element in the demo below and how, once you scroll, it continues to stick to the bottom of the page:
+			 The fixed value is similar to absolute as it can help you position an element anywhere relative to the document, however this value is unaffected by scrolling. See
+		 </p>
+ 	 </div>
+	 <!-- end length -->
+ </div> <!-- </div>  end of wrapper -->
+
+</body>

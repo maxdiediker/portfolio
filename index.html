@@ -1,0 +1,148 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Max D | Portfolio</title>
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" >
+<link rel="stylesheet" type="text/css" href="css/media.css" >
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!-- Add jQuery library -->
+<SCRIPT type="text/javascript"
+        src="http://code.jquery.com/jquery-latest.js"></SCRIPT>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+
+
+  <script>
+
+  $(document).ready(function(){
+		// $('.shad').hide();
+		// $('#sun').hide();
+	  // $('.shad').fadeIn(2000);
+    // $("#tools").hide();
+
+  $("#sun").animate({
+      "top": "+=250px",
+			"opacity": ".5"
+			},
+          2500,function(){
+						$("#sun").animate({
+					      "opacity": "1"
+							},1000, function(){
+									$(".shad").animate({
+								      "opacity": "1"
+										},1000);
+								});
+			});
+	 });
+
+  </script>
+  </head>
+
+<body>
+  <div id ="wrapper">
+    <header>
+      	  <div id="header-left">
+      	  	 <div id="logo-img">
+   						 <!-- <div class="shad"> -->
+                <!-- <img src="images/logo-sun-shad.gif" class="shad" alt="shadow"> -->
+
+								<div class="shad">
+   								<img src="images/logo-bg-shad.gif" class="shad" alt="shadow">
+								</div>
+										<div id ="sun">
+                  <img src="images/logo-bg-sun.gif"   alt="sun">
+									 </div>
+             </div><!--end logo-img-->
+           </div> <!--end header-left-->
+
+
+          	  <div id = "logotextbox">
+                  <h3><b>Max Diediker</b><br>Front-End Developer<br>Designer </h3>
+                </div> <!--end logotextbox-->
+
+								<div id = "contact-b">
+                  <ul>
+	                  <li class = "t-alignright"><h3> mdiediker@gmail.com</h3></li></a>
+                      <a href = "https://github.com/maxdiediker" target="#"> <li class = "t-alignright"><h3>Github</h3></li></a>
+                      <a href = "https://www.linkedin.com/in/max-diediker-a16475119" target="#"> <li class = "t-alignright"><h3>LinkedIn</h3></li></a>
+                    </ul>
+	                </div> <!--end contact-b-->
+
+
+
+   </header>
+ <div id="tools">
+     <div id="one">
+       <h5>1. @media screen and (min-width: 1550px) and (max-width: 20000px)current: <span class = 'width'>what is this?</span></h5>
+     </div>
+     <div  id="two">
+       <h5>2. screen and (min-width:1000px) and (max-width: 1550px)current: <span class = 'width'>what is this?</span></h5>
+     </div>
+     <div id="three">
+       <h5>3. (min-width:780px) and (max-width: 999px) current: <span class = 'width'>what is this?</span></h5>
+     </div>
+     <div  id="four">
+       <h5>4. @media screen and (min-width: 350px) and (max-width: 780px)current: <span class = 'width'>what is this?</span></h5>
+     </div>
+  </div>
+
+
+	 <div id = "intro">
+
+       <!-- <img src = "images/bg-intro-l.gif" class = "f-left" alt="left">
+       <img src = "images/bg-intro-r.gif" class = "f-right" alt="right"> -->
+		 		 <h1>Hello, my name is Max Diediker, thanks for checking out my portfolio website. I am a Seattle area website front end developer, designer and illustrator.</h1>
+	 </div>
+<div id ="sample-box">
+	 <!-- <div id = "w-sample-c" class="bg-scale">
+  		 <a href="front.html"><h2>code examples</h2><p><span class="topic-name">o absolute as it can help you position an element anywhere relative to the document</span></p></a>
+ 	 </div> -->
+   <div id = "w-sample-wp" class="bg-scale">
+        <img src  ="images/bg-sample-wp.gif" alt = "placeholder" style="visibility: hidden;">
+    		 <a href="front.html"><h3>Word Press DEv</h3><span class="topic-name">custom wordpress themes optimized for speed</span></a>
+ 	 </div>
+
+ <div id = "w-sample-a"  class="sample-img">
+   <!-- <a href="gallerys.html"> -->
+     <img  src="images/bg-sample-a.png" alt="aaaaaaaaaaaaaaa">
+     <h2><span class="topic-name">Illustrations</h2><p>These are examples of designs and illustrations</span></p>
+   <!-- </a> -->
+
+
+ 	 </div>
+</div>
+
+		 <!-- end w-sample -->
+	 <div id = "length">
+		 <p>The fixed value is similar to absolute as it can help you position an element anywhere relative to the document, however this value is unaffected by scrolling. See the child
+		 </p>
+ 	 </div>
+	 <!-- end length -->
+ </div> <!-- </div>  end of wrapper -->
+
+</body>
+<script>
+var three = $("#three");
+var startwidth = $(window).width();
+$( ".width" ).html( startwidth);
+
+// turn on dev tools
+// $("#intro").click(function(){
+//   $("#tools").show();
+// });
+
+$("#contact-b li").slideLeft
+
+$( window ).resize(function() {
+  $( ".width" ).html( $( window ).width());
+});
+
+</script>
+
+</html>

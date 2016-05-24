@@ -1,0 +1,117 @@
+*  {
+	padding:0;
+	margin:0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:100%;
+}
+
+#wrapper {
+	 max-width:1400px;
+	 width:90%;
+	 margin:0 auto ;
+	 background-color:white;
+	 border-radius:15px;
+	 min-width:460px;
+	}
+
+	.bg-img {
+	    width: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    z-index: 0;
+	}
+
+
+
+/********************logo img classes*******************/
+header {
+	width:100%;
+	margin-top:0;
+	overflow:hidden;
+	max-height: 762px;
+
+}
+
+#header-left {
+	/*width:940px;*/
+	border-radius:15px;
+	width:50% ;
+	float:left;
+	background:white;
+	position: relative;
+
+}
+#logo-img  {
+	float:left;
+	max-width:100%;
+	min-width:350px;
+	/*background: green;*/
+	background: url(../images/logo-bg.gif) no-repeat;
+	background-size: contain;
+	overflow: hidden;
+	position: relative;
+	left:0px;
+	right:0px;
+	}
+
+.shad{
+	z-index: 4;
+	position: relative;
+	top:0px;
+	left:0px;
+
+}
+/*.sun{
+	z-index: 5;
+	position: relative;
+	top:50%;
+	left:0px;
+
+}*/
+
+#header-right {
+	/*width:940px;*/
+	width:32% ;
+	height:100%;
+	float:right;
+	border-radius:15px;
+	border:3px solid orange;
+	overflow: auto;
+	position: relative;
+	top:140px;
+
+}
+#logotextbox {
+  float:right;
+ 	background:white;
+ 	border-radius:7px;
+ 	margin:3% 7%;
+ 	overflow:hidden;
+ }
+
+
+
+#menu-fixed{
+	position:fixed;
+	max-width: 40%;
+	min-width: 40%;
+	top:0;
+	right:0;
+	z-index: 99;
+}
+
+#bio {
+	/*width:300px;*/
+	width:31.914893%;
+	float:right;
+}

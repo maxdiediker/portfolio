@@ -1,0 +1,403 @@
+
+
+*  {
+	padding:0;
+	margin:0;
+}
+
+*  {
+	padding:0;
+	margin:0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:100%;
+}
+
+#wrapper {
+	 max-width:1400px;
+	 width:90%;
+	 margin:20px auto ;
+	 background-color:white;
+	 border-radius:15px;
+	 min-width:460px;
+	}
+
+.nav {
+	display:none;
+}
+ul.primary-nav,.nav-button, .phone, .home {
+	display:none;
+}
+
+#home_container {
+ 	width:80%;
+ 	margin:0 auto;
+ 	background:#ccc;
+ 	border-radius: 15px;
+ 	border: 5px solid black;
+ 	padding: 2%;
+ }
+
+h5:hover, nav ul li.nav-on a   {
+ 		text-transform:capitalize;
+    font-variant:small-caps;
+    color:black;
+    font-size:1.4em;
+    text-decoration: underline;
+   }
+nav {
+	margin-top:20%;
+	width:100% ;
+	height:auto;
+		height:100%;
+	line-height:60px;
+	float:right;
+
+
+}
+nav ul {
+	margin:0 auto;
+	text-align:center;
+
+
+}
+nav ul li{
+	 background-color:black;
+	display:inline;
+	float:left;
+	width:22.404255% ;/*14.893617%*/
+	border-radius:15px;
+	margin:0 1%;
+
+	}
+
+nav ul li a {
+
+	color:white;
+	text-decoration:none;
+}
+  nav ul li a:hover{
+	 display:block;
+	 background-color:white;
+
+ }
+
+ /* width:74.468085%  this is three-fourths*/
+/* width:31.914893%  this is one third*/
+/* width:48.936170%  this is one half*/
+/* width:23.404255%  this is one fourth*/
+/* 14.893617%  this is one eighth*/
+/* width:65.957446%  this is two-thirds*/
+
+
+header {
+	width:100%;
+	margin-top:12px;
+	overflow:hidden;
+}
+
+#header-left {
+	/*width:940px;*/
+	border-radius:15px;
+	width:60% ;
+	float:left;
+	background:white;
+}
+#logo-img  {
+	float:left;
+	max-width:100%;
+	min-width:350px;
+	/*background: green;*/
+	background: url(../images/logo-bg.gif) no-repeat;
+	background-size: contain;
+	overflow: hidden;
+	position: relative;
+	left:0px;
+	right:0px;
+	}
+	.shad{
+		z-index: 4;
+		position: relative;
+		top:0px;
+		left:0px;
+
+	}
+	/*.sun{
+		z-index: 5;
+		position: relative;
+		top:50%;
+		left:0px;
+
+	}*/
+	#header-right {
+		/*width:940px;*/
+		width:32% ;
+		height:100%;
+		float:right;
+		border-radius:15px;
+		border:3px solid orange;
+		overflow: auto;
+		position: relative;
+		top:140px;
+	}
+#logotextbox {
+  float:right;
+ 	background:white;
+ 	border-radius:7px;
+ 	margin:3% 7%;
+ 	overflow:hidden;
+ }
+
+ #menu-fixed{
+ 	position:fixed;
+ 	max-width: 40%;
+ 	min-width: 300px;
+ 	top:0;
+ 	right:0;
+ 	z-index: 99;
+ }
+
+ h2 {
+ 	font-size:1.9em;
+ 	line-height:1.3em;
+ 	text-transform:capitalize;
+  font-variant:small-caps;
+  text-align: center;
+ }
+ h3 {
+ 	text-transform:capitalize;
+  font-variant:small-caps;
+ 	text-align:left;
+ 	color:black;
+ 	padding-left:5%;
+	padding-right:5%;
+ 	font-size: 150%;
+ 	line-height:1.4em;
+ 	padding:7%;
+ }
+  h5  {
+	text-transform:capitalize;
+  font-variant:small-caps;
+  color:white;
+  font-size:1.2em;
+ }
+img {
+	display:inline;
+	max-width:100%;
+	z-index: 1;
+}
+/********************logo img classes*******************/
+#logo  {
+	float:left;
+	/*width:620px;*/
+	width:40.936170% ;
+	max-width:100%;
+	min-width:150px;
+	background: url('../images/logo-bg.gif'), 600px 10px no-repeat, z-index: 1;
+	}
+.bg-sun{
+	z-index: 4;
+}
+#bio {
+	/*width:300px;*/
+	width:31.914893%;
+	float:right;
+}
+
+
+
+#picture  {
+
+	/*width:300px;*/
+	width:31.914893%;
+	float:left;
+	margin-top:20px;
+
+	background-color:magenta;
+}
+
+#main-home  {
+
+	/*width:620px;*/
+	width:100%;
+
+
+	margin:20px auto ;
+}
+#prosection  {
+
+	/*width:620px;*/
+	width:100%;
+	background:black;
+
+	margin:0px auto ;
+}
+aside {
+	clear:both;
+	height:60px;
+	background:black;
+}
+
+
+
+#micro ul li {
+
+	 list-style-type:none;
+	 text-align: center;
+}
+#micro ul li a{
+	text-transform:capitalize;
+    font-variant:small-caps;
+	 text-decoration:none;
+	 margin:auto;
+	 color:black;
+	 line-height:1.5em;
+}
+#micro ul li  p{
+	 color:black;
+
+}
+
+
+
+#social  {
+
+margin: 5% auto;
+width:23.404255%;
+
+
+}
+
+#social ul li,#social1 ul li {
+
+	 list-style-type:none;
+}
+
+#social ul li a{
+	 text-decoration:none;
+
+}
+
+
+
+#validator {
+
+   width:80%;
+ 	margin:0 auto;
+ 	border-radius:10px;
+ 	text-align:center;
+	 clear:both;
+	 height:60px;
+
+}
+#social1  {
+margin: 5px auto;
+
+width:23.404255%;
+
+}
+/* php contact */
+fieldset  {
+	background-color:white;
+	border-radius:10px;
+	padding:10px 15px 10px 10px;
+
+}
+
+legend  {
+  line-height:2;
+  border-radius:12px;
+  font-weight:bold;
+  font-size:1.875em;
+  border:2px ;
+  border-color:#0B2161; /*dark blue*/
+  background: #f1da36; /* Old browsers */
+background: #010101; /* Old browsers */
+background: #010101; /* Old browsers */
+background: -moz-linear-gradient(top,  #010101 1%, #ffffff 46%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#010101), color-stop(46%,#ffffff), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #010101 1%,#ffffff 46%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #010101 1%,#ffffff 46%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #010101 1%,#ffffff 46%,#000000 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #010101 1%,#ffffff 46%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010101', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+
+  padding:15px;
+}
+
+p  {
+	margin-bottom:5px;
+}
+
+input  {
+	width:100%;
+	height:20px;
+	background:#ccc;
+
+}
+input [type=comments] {
+	width:100%;
+	height:20px;
+	background:#ccc;
+
+}
+
+#resume {
+
+	margin:0 auto;;
+}
+
+textarea  {
+	width:90%;
+	height:50px;
+	background:#ccc;
+}
+nav ul li.nav  {  /*size of container for big li's, why 'float left?*/
+
+	width:22.404255% ;/*14.893617%*/
+
+	display:inline;
+
+}
+nav ul li.nav a  {/*this styles the text*/
+
+	text-decoration:none;
+	display:block;
+
+
+}
+nav ul li.nav a:hover  {
+
+	border-radius:15px;
+color:black;
+	background-color:white; /*normal button state*/
+}
+
+/*copied from above for the -on treatment*/
+nav ul li.nav-on {
+
+
+
+
+	 background-color:white;
+}
+nav ul li.nav-on a  {
+
+
+
+    border-radius:15px;
+
+	background-color:white; /*normal button state*/
+
+}
+/*home class*/
