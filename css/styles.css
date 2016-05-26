@@ -1,9 +1,5 @@
 
 
-*  {
-	padding:0;
-	margin:0;
-}
 
 *  {
 	padding:0;
@@ -25,6 +21,8 @@ li{
 body {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size:100%;
+	background: green;
+
 }
 colors{
 	background:#680002;/*darkred*/
@@ -32,6 +30,7 @@ colors{
 	background:#ffef4f;/*yellow*/
 	border-top: 9px solid #992606;/*med-red*/
 	border-bottom:  19px solid #ffef4f;/*yellow*/
+	background:rgb(183,242,246); /*  RGB lightblue*/
 
 }
 
@@ -41,7 +40,6 @@ colors{
 	 margin:2px auto ;
 	 background-color:white;
 
-	 min-width:300px;
 	}
 
 .nav {
@@ -57,15 +55,12 @@ colors{
  	padding: 2%;
  }
 
-
-
  /* width:74.468085%  this is three-fourths*/
 /* width:31.914893%  this is one third*/
 /* width:48.936170%  this is one half*/
 /* width:23.404255%  this is one fourth*/
 /* 14.893617%  this is one eighth*/
 /* width:65.957446%  this is two-thirds*/
-
 
 header {
 	width:100%;
@@ -77,7 +72,6 @@ header {
 
 #header-left {
 	/*width:940px;*/
-
 	width:60% ;
 	float:left;
 
@@ -86,7 +80,7 @@ header {
 #logo-img  {
 	float:left;
 	max-width:100%;
-	min-width:350px;
+
 	/*background: green;*/
 	background: url(../images/logo-bg.gif) no-repeat;
 	background-position: center;
@@ -127,17 +121,15 @@ header {
 #logotextbox {
 	width:38%;
 	float:right;
-
-  float:right;
 	background:#680002;/*darkred*/
  	background:#b7f2f6;/*lightblue*/
 	background:#ffef4f;/*yellow*/
 	background: none;
-
  	overflow:hidden;
 	border-top: 9px solid #992606;/*med-red*/
 	border-bottom:  19px solid #ffef4f;/*yellow*/
 }
+
 #contact-b {
 	width:38%;
 	float:right;
@@ -163,48 +155,46 @@ header {
 }
 
 
-#intro {
+#intro2 {
 	width: 70%;
-	margin:20px auto 20px auto;
+	clear: both;
+	margin:80px auto 20px auto;
+	margin-top: 5%;
 	overflow: auto;
-	background: url(../images/bg-intro-f.gif) no-repeat;
-	background-position: center;
-	background-size: contain;
+	/*background: url(../images/bg-intro-f.gif) no-repeat;*/
+	/*background-position: center;
+	background-size: contain;*/
+	background: #fff9a6;
 }
 
-#intro h1 {
+#intro2 h3 {
 	z-index: 2;
-	font-size: 200%;
+	font-size: 160%;
 	padding: 12% 12% 12% 16%;
+	padding: 2%;
 }
 
-/*#intro img{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}*/
-
-.f-right {
+.f-right{
 	float:right;
 	display: inline-block;
 	width: 20%;
+	height: 100%;
 }
 
-.f-left {
+.f-left  {
 	float:left;
 	display: inline-block;
 	width: 20%;
 	height: 100%;
 }
 
-#intro h2{
+#intro h3{
 	position:absolute;
 	top:30%;
 	left:20%;
 	z-index: 3;
 	margin:auto;
 	width:50%;
-
 }
 
 .explosion{
@@ -212,14 +202,6 @@ header {
 	width: 100%;
 	z-index: 1;
 	margin: auto;
-}
-
-#length{
-	display: block;
-	clear:both;
-	width: 50%;
-	margin: auto;
-	font-size: 160%;
 }
 
 #menu-fixed{
@@ -248,24 +230,15 @@ sample-box{
 #w-sample-c{
 	float:left;
 	width:49%;
-	background: url(../images/bg-sanple-c.gif) no-repeat;
 	min-height: 400px;
-
-	transition: background 0.2s ease,
-              padding 0.8s linear;
-	transition-duration: .5s;
 }
 
 
 #w-sample-wp{
+	max-width: 100%;
 	float:right;
 	width:49%;
-	background: url(../images/bg-sample-wp.gif) no-repeat;
 	overflow: hidden;
-	background-size:100% 100% !important;
-	transition: background 0.4s ease,
-              padding 0.8s linear;
-	transition-duration: .5s;
 }
 
 #w-sample-a{
@@ -273,48 +246,60 @@ sample-box{
 	float:left;
 	width:49%;
 	overflow: hidden;
-	transition: background 0.2s ease,
-							padding 0.8s linear;
-	transition-duration: .5s;
+
 }
 
-.sample-img{
+.img-sample{
 	position: relative;
 	width: 100%;
-  transition:width 0.5s ease;
+	display: inline-block;
+	overflow: hidden;
 }
 
+ .img-sample img{
+	 vertical-align: top;
+	 transition: all .2s ease-in-out;
+}
 
-.sample-img h2{
+.img-sample img:hover {
+		cursor:crosshair;
+		transform: scale(1.15);
+}
+
+.img-sample h3{
 	position: absolute;
-	top: 200px;
-	left: 0;
+	top: 180px;
+	left: -34px;
 	width: 100%;
 	text-align: left;
-
 }
-.sample-img h2 span {
+
+.img-sample h3 span {
    color: white;
-   letter-spacing: -1px;
+   letter-spacing: 0;
    background: rgb(104, 0, 2); /* fallback color */
-   background: rgba(104, 0, 2, 0.7);
-   padding: 10px;
+   background: rgba(104, 0, 2, 0.8);/* dark red rgb */
+	 background: rgba(0, 0, 2, 0.8);
+   padding: 6px 20px 6px 20px;
 	 font-size: 1.2em;
 }
 
-.sample-img:hover {
-		cursor:crosshair;
-    text-decoration: none;
-		transform: scale(1.5);
+.img-sample p{
+	position: absolute;
+	top: 260px;
+	left: 0;
+	line-height: 2.3em;
+	text-align: left;
+
 }
-/*.bg-scale:hover {
 
-    text-decoration: none;
-    image-size: 120%!important;
-		transform: scale(.5);
-
-
-}*/
+.img-sample p span{
+	display: inline;
+	color:white;
+	padding: 10px 10px 10px 10px;
+	background:rgb(183,242,246); /*  RGB lightblue*/
+	background: rgba(104, 0, 2, 0.8);/* dark red rgb */
+}
 
 /* **********************work Sample styles **********/
  h2 {
@@ -331,8 +316,8 @@ sample-box{
  	color:black;
  	padding-left:5%;
 	padding-right:5%;
- 	font-size: 1.6em;
- 	line-height:1.4em;
+ 	font-size: 1.4em;
+ 	line-height:1.7em;
  	padding:7%;
  }
   h5  {
