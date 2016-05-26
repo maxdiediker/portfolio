@@ -11,55 +11,24 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+
 <!-- Add jQuery library -->
 <SCRIPT type="text/javascript"
         src="http://code.jquery.com/jquery-latest.js"></SCRIPT>
 
+<script src="js/functions.js"></script>
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
 
 
   <script>
 
-  $(document).ready(function(){
-		// $('.shad').hide();
-		// $('#sun').hide();
-	  // $('.shad').fadeIn(2000);
-    // $("#tools").hide();
-
-  $("#sun").animate({
-      "top": "+=250px",
-			"opacity": ".5"
-			},
-          2500,function(){
-						$("#sun").animate({
-					      "opacity": "1"
-							},1000, function(){
-									$(".shad").animate({
-								      "opacity": "1"
-										},1000);
-								});
-			});
-	 });
 
   </script>
   </head>
 
 <body>
   <div id ="wrapper">
-    <div id="tools">
-        <div id="one">
-          <h5>1. @media screen and (min-width: 1550px) and (max-width: 20000px)current: <span class = 'width'>what is this?</span></h5>
-        </div>
-        <div  id="two">
-          <h5>2. screen and (min-width:1000px) and (max-width: 1550px)current: <span class = 'width'>what is this?</span></h5>
-        </div>
-        <div id="three">
-          <h5>3. (min-width:780px) and (max-width: 999px) current: <span class = 'width'>what is this?</span></h5>
-        </div>
-        <div  id="four">
-          <h5>4. @media screen and (min-width: 350px) and (max-width: 780px)current: <span class = 'width'>what is this?</span></h5>
-        </div>
-     </div>
+
     <header>
 
       	  <div id="header-left">
@@ -82,14 +51,15 @@
 
 								<div id = "contact-b">
                   <ul>
-	                  <li class = "t-alignright"><h3>Gmail</h3></li></a>
-                      <a href = "https://github.com/maxdiediker" target="#"> <li class = "t-alignright"><h3>Github</h3></li></a>
-                      <a href = "https://www.linkedin.com/in/max-diediker-a16475119" target="#"> <li class = "t-alignright"><h3>LinkedIn</h3></li></a>
+	                  <li class = "t-alignright"><h3>Gmail</h3></li>
+                       <li class = "t-alignright"><a href = "https://github.com/maxdiediker" target="#"><h3>Github</h3></a></li>
+                       <li class = "t-alignright"><a href = "https://www.linkedin.com/in/max-diediker-a16475119" target="#"><h3>LinkedIn</h3></a></li>
                     </ul>
 	                </div> <!--  end contact-b  -->
                 </div><!--  end header-right   -->
 
    </header>
+
    <div id="tools">
        <div id="one">
          <h5>1. @media screen and (min-width: 1550px) and (max-width: 20000px)current: <span class = 'width'>what is this?</span></h5>
@@ -101,31 +71,34 @@
          <h5>3. (min-width:780px) and (max-width: 999px) current: <span class = 'width'>what is this?</span></h5>
        </div>
        <div  id="four">
-         <h5>4. @media screen and (min-width: 350px) and (max-width: 780px)current: <span class = 'width'>what is this?</span></h5>
+         <h5>4. @media screen and (min-width: 481px) and (max-width: 779px)current: <span class = 'width'>what is this?</span></h5>
+       </div>
+       <div  id="five">
+         <h5>4. @media screen and (min-width: 299px) and (max-width: 480px)current: <span class = 'width'>what is this?</span></h5>
        </div>
     </div>
 
 
-	 <div id = "intro2">
 
+	 <div id = "intro2">
        <img src = "images/bg-intro-l.gif" class = "f-left" alt="left">
        <img src = "images/bg-intro-r.gif" class = "f-right" alt="right">
-		 		 <h3>Hello, my name is Max Diediker, thanks for checking out my portfolio website. I am a Seattle area website front end developer, designer and illustrator.</h3>
+		 		 <h3 class="intro">Hello, my name is Max Diediker, thanks for checking out my portfolio website. I am a Seattle area website front end developer, designer and illustrator.</h3>
 	 </div>
 <div id ="sample-box">
 	 <div id = "w-sample-c" class="img-sample">
-      <a href="front.html" target="#"><img  src="images/bg-sample-wp2.png" alt="code samples">
-  		<h3><span>code examples</h3><p><span class="img-sample">Link to some of my work on Github</span></p></a>
+      <a href="front.html" target="#"><img  src="images/bg-sample-wp2.png" alt="code samples"></a>
+  		<h3><span>code examples</span></h3><p><span class="img-sample">Link to some of my work on Github </span></p>
  	 </div>
    <div id = "w-sample-wp" class="img-sample">
-        <a href="test.html" target="#"><img src  ="images/bg-sample-wp3.png" alt = "wordpress">
-    		 <h3><span>Word Press DEv</h3></span><p><span class="img-sample">custom wordpress themes optimized for speed</span></a>
+        <a href="test.html" target="#"><img src  ="images/bg-sample-wp3.png" alt = "wordpress"></a>
+    		 <h3><span>Word Press DEv</span></h3><p><span class="img-sample">custom wordpress themes optimized for speed</span>
  	 </div>
 
  <div id = "w-sample-a"  class="img-sample">
    <a href="gallerys.html" target="#">
      <img  src="images/bg-sample-a.png" alt="illustration">
-     <h3><span>Illustrations</h3></span><p><span class="img-sample">These are examples of designs and illustrations</span></p>
+     <h3><span>Illustrations</span></h3><p><span class="img-sample">These are examples of designs and illustrations</span></p>
    </a>
 
 
@@ -137,23 +110,10 @@
 
  </div> <!-- </div>  end of wrapper -->
 
-</body>
+
 <script>
-var three = $("#three");
-var startwidth = $(window).width();
-$( ".width" ).html( startwidth);
 
-// turn on dev tools
-// $("#intro").click(function(){
-//   $("#tools").show();
-// });
-
-$("#contact-b li").slideLeft
-
-$( window ).resize(function() {
-  $( ".width" ).html( $( window ).width());
-});
 
 </script>
-
+</body>
 </html>

@@ -21,7 +21,6 @@ li{
 body {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size:100%;
-	background: green;
 
 }
 colors{
@@ -156,22 +155,18 @@ header {
 
 
 #intro2 {
-	width: 70%;
+	position:relative;
+	width: 100%;
 	clear: both;
 	margin:80px auto 20px auto;
 	margin-top: 5%;
-	overflow: auto;
-	/*background: url(../images/bg-intro-f.gif) no-repeat;*/
-	/*background-position: center;
-	background-size: contain;*/
-	background: #fff9a6;
+	overflow: auto;;
+	background: #fff9a6;/* very light yellow */
 }
 
-#intro2 h3 {
-	z-index: 2;
-	font-size: 160%;
-	padding: 12% 12% 12% 16%;
-	padding: 2%;
+#intro2 h3{
+	font-variant: normal;
+
 }
 
 .f-right{
@@ -188,15 +183,6 @@ header {
 	height: 100%;
 }
 
-#intro h3{
-	position:absolute;
-	top:30%;
-	left:20%;
-	z-index: 3;
-	margin:auto;
-	width:50%;
-}
-
 .explosion{
 	position:relative;
 	width: 100%;
@@ -204,19 +190,7 @@ header {
 	margin: auto;
 }
 
-#menu-fixed{
-	position:fixed;
-	max-width: 40%;
-	min-width: 300px;
-	top:0;
-	right:0;
-	z-index: 99;
-}
-#res-cont{
-	float:right;
-	max-width: 40%;
-	min-width: 300px;
-}
+
 
 #tools{
 	display: block;
@@ -262,7 +236,7 @@ sample-box{
 }
 
 .img-sample img:hover {
-		cursor:crosshair;
+		cursor:pointer;
 		transform: scale(1.15);
 }
 
@@ -272,6 +246,7 @@ sample-box{
 	left: -34px;
 	width: 100%;
 	text-align: left;
+	z-index: 100;
 }
 
 .img-sample h3 span {
@@ -286,10 +261,11 @@ sample-box{
 
 .img-sample p{
 	position: absolute;
-	top: 260px;
+	top: 290px;
 	left: 0;
 	line-height: 2.3em;
 	text-align: left;
+	z-index: 100;
 
 }
 

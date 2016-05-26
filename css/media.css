@@ -21,6 +21,10 @@
   background: blue;
   width: 100%;
 }
+#five {
+  display: none;
+}
+
   body {
   font-size:128%;
   background: none;
@@ -34,6 +38,8 @@
       font-size: 2.0em;
   }
 }
+
+
 @media screen and (min-width:1000px) and (max-width: 1550px) {
 /*           ----------NUMBER TWO--------         */
 
@@ -51,6 +57,11 @@
   #four {
     display: none;
   }
+
+  #five {
+    display: none;
+  }
+
   body {
 
   }
@@ -60,7 +71,7 @@
   }
 
   #intro2{
-    width: 80%;
+    width: 91%;
   }
   #intro2 h3 {
   	z-index: 2;
@@ -84,6 +95,11 @@
   #four{
     display:none;
   }
+
+  #five {
+    display: none;
+  }
+
   .width{
     display:inline;
   }
@@ -141,11 +157,8 @@
 }
 
 
-
-
-
-@media screen and (min-width: 320px) and (max-width: 780px) {
-/*           ----------NUMBER four--------         */
+@media screen and (min-width: 481px) and (max-width: 779px) {
+/*           ----------NUMBER four  PURPLE--------         */
 
   #one, #one.width{
     display: none;
@@ -160,6 +173,92 @@
     display: block;
     background: purple;
   }
+  #five {
+    display: none;
+  }
+
+  #wrapper {
+   	margin:auto;
+    padding: 0;
+   	width:97%;
+   }
+
+  #header-left, #logo-img{
+   width:100%;
+   float: none;
+   margin: auto;
+  }
+
+  #logotextbox {
+   float:left;
+   margin:auto;
+   margin-top:9%;
+   width:45%;
+   margin-top: 1px;
+   font-size: .9em;
+  }
+
+  #logotextbox h3{
+   text-align: left;
+   padding:5% 1% 5% 1%;
+   font-size: 1.2em;
+  }
+
+  #contact-b {
+   float:right;
+   margin:auto;
+   margin-top: 5px;
+   width:49%;
+  }
+
+  #intro2{
+    width:100%;
+
+  }
+  #intro2 h3{
+    font-size: 103%;
+    padding: 2% 2% 2% 12% ;
+  }
+
+  #w-sample-c{
+  	float:none;
+  	width:100%;
+  }
+
+  #w-sample-wp{
+  	float:none;
+  	width:100%;
+
+  }
+
+  #w-sample-a{
+  	float:none;
+  	width:100%;
+
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+/*(min-width: 299px) and (max-width: 480px)*/
+@media screen and (min-width: 299px) and (max-width: 480px){
+  /* -------------FIVE---------------   */
+/* Styles */
+#one{
+  display: none;
+}
+#two{
+  display: none;
+}
+#three{
+  display: none;
+}
+#four {
+  display: none;
+}
+#five {
+  display: block;
+  background: black;
+}
 
 
 body{
@@ -200,22 +299,16 @@ body{
    margin:auto;
    margin-top: 5px;
    width:49%;
-
   }
 
 #contact-b li.t-alignright h3{
-  font-size: .8em;
+  font-size: 1.5em;
   padding-bottom:12%;
-
 }
 
-#res-cont{
-  margin-top: 20px;
-   width:40%;
-   min-width: 200px;
- }
+
  #intro2{
-   width:95%;
+   width:99%;
  }
 
  #intro2 h3 {
@@ -225,25 +318,7 @@ body{
  }
 
 
- #w-sample-c{
- 	float:none;
- 	width:100%;
- }
 
 
- #w-sample-wp{
- 	float:none;
- 	width:100%;
 
- }
-
- #w-sample-a{
- 	float:none;
- 	width:100%;
-
- }
-
-h3{
-    font-size: 1.1em;
-}
 }
