@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width" />
 <link rel="stylesheet" type="text/css" href="css/styles.css" >
 <link rel="stylesheet" type="text/css" href="css/media.css" >
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -19,11 +20,42 @@
 <script src="js/functions.js"></script>
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
 
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
 
-  <script>
 
-
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
   </script>
+
+
+		<!---    FLEXSLIDER -->
+				<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="./css/mobilemenu.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
+
+
+		<script>
+		$(document).ready(function(){
+			$(".nav-button").click(function () {
+			$(".nav-button,.primary-nav").toggleClass("open");
+			});
+		});
+		</script>
+
   </head>
 
 <body>
@@ -33,14 +65,14 @@
 
       	  <div id="header-left">
 
-      	  	 <div id="logo-img">
+      	  	 <div id="logo-img"><a href="index.html">
 								<div class="shad">
    								<img src="images/logo-bg-shad.gif" class="shad" alt="shadow">
 								</div>
 										<div id ="sun">
                   <img src="images/logo-bg-sun.gif"   alt="sun">
 									 </div>
-             </div><!--end logo-img-->
+             </div></a><!--end logo-img-->
            </div> <!--end header-left-->
 
 
@@ -81,53 +113,44 @@
        </div>
     </div>
 
+<div id="gal-slider">
+    <div id="main" role="main">
+        <section class="slider">
+          <div class="flexslider">
+            <ul class="slides">
+              <li data-thumb="images/scr_1.jpg" >
+                <img src="images/scr_1.jpg" alt="news" />
+              </li>
+              <li data-thumb="images/scr_pers_14.jpg" >
+                <img src="images/scr_pers_14.jpg" alt="news" />
+              </li>
+              <li data-thumb="images/scr_pers_15.jpg" >
+                <img src="images/scr_pers_15.jpg" alt="news" />
+              </li>
+              <li data-thumb="images/scr_4.jpg">
+                <img src="images/scr_4.jpg"  alt="news"/>
+              </li>
+              <li data-thumb="images/lotr_3.jpg">
+                <img src="images/lotr_3.jpg"  alt="news"/>
+              </li>
+              <li data-thumb="images/lotr_1.jpg">
+                <img src="images/lotr_1.jpg"  alt="news"/>
+              </li>
+              <li data-thumb="images/lo_1.jpg">
+                <img src="images/lo_1.jpg"  alt="news"/>
+              </li>
+              <li data-thumb="images/per_4.jpg">
+                <img src="images/per_4.jpg"  alt="news"/>
+              </li>
+               </ul>
+
+          </div><!--end divclass flex-->
+          </section>
+    </div><!--end divmain-->
+  </div><!--end gal-slider-->
 
 
-	 <div id = "intro2" class="border-image">
-       <!-- <img src = "images/bg-intro-l.gif" class = "f-left" alt="left">
-       <img src = "images/bg-intro-r.gif" class = "f-right" alt="right"> -->
-		 		 <h3 class="intro">Hello, my name is Max Diediker, thanks for checking out my portfolio website. I am a Seattle area website front end developer, designer and illustrator.  I specialize in HTML5, CSS3, and client side JQuery and Javascript</h3>
-	 </div>
 
-   <div id="skill-icon">
-
-       <img src="images/bt-css.png" alt"">
-       <img src="images/bt-html.png" alt"">
-       <img src="images/bt-js.png" alt"">
-       <img src="images/bt-grunt.png" alt"">
-       <img src="images/bt-handlebars.png" alt"">
-       <img src="images/bt-git.png" alt"">
-       <!-- <img src="images/bt-hapi.png" alt""> -->
-       <img src="images/bt-3ds.png" alt"">
-       <img src="images/bt-ps.png" alt"">
-     </div>
-
-  
-<div id ="sample-box">
-
-   <div id = "w-sample-wp" class="img-sample">
-        <a href="http://www.mdiediker.com/weight-less/home-page.php" target="#"><img src  ="images/bg-sample-w.png" alt = "wordpress">
-    		<h3><span>Web Sites</span><span class="spacer"></span></h3><p><b><span class="img-sample">Html, php and Wordpress</span></a>
- 	 </div>
-
-   <div id = "w-sample-d" class="img-sample">
-      <a href="http://www.mdiediker.com/design-sol/" target="#"><img  src="images/bg-sample-d.png" alt="code samples"></a>
-  		<a href="http://www.mdiediker.com/design-sol/" target="#"><h3><span>Design work</span><span class="spacer"></span></h3><p><b><span class="img-sample">Recent design work</span></a></p>
- 	 </div>
-
-    <div id = "w-sample-a"  class="img-sample">
-       <a href="gal1.html" >
-         <img  src="images/bg-sample-a.png" alt="illustration">
-         <h3><span>Illustrations</span><span class="spacer"></span></h3><p><b><span class="img-sample">designs and illustrations</span></p>
-       </a>
-	  </div>
-    <div id = "w-sample-c" class="img-sample">
-       <a href="http://tinyurl.com/j8yv3mf" target="#"><img  src="images/bg-sample-wp3.png" alt="code samples">
-   		<h3><span>code examples</span><span class="spacer"></span></h3><p><b><span class="img-sample">My work on Github </span></p></a>
-  	 </div>
-</div>
-
-		 <!-- end w-sample -->
 
 
  </div> <!-- </div>  end of wrapper -->

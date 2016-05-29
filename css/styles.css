@@ -4,6 +4,7 @@
 *  {
 	padding:0;
 	margin:0;
+	box-sizing: border-box;
 }
 html {
   box-sizing: border-box;
@@ -11,11 +12,17 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+
 li{
 	list-style: none;
 }
 .width{
 	color:red;
+}
+
+a{
+	text-decoration: none;
 }
 
 body {
@@ -27,15 +34,19 @@ colors{
 	background:#680002;/*darkred*/
 	background:#b7f2f6;/*lightblue*/
 	background:#ffef4f;/*yellow*/
+	background:#fdc50e;/*orange*/
 	border-top: 9px solid #992606;/*med-red*/
 	border-bottom:  19px solid #ffef4f;/*yellow*/
 	background:rgb(183,242,246); /*  RGB lightblue*/
+	background: rgba(104, 0, 2, 0.8);/*dark redrgb */
+	background: rgba(255, 239, 79, 0.8);/*yellow rgb */
+	#f1eb9d;/*verylightyellow*/
+#ffef4f;/*brightlightyellow*/
 
 }
 
 #wrapper {
 	 max-width:1400px;
-	 width:90%;
 	 margin:2px auto ;
 	 background-color:white;
 
@@ -71,9 +82,8 @@ header {
 
 #header-left {
 	/*width:940px;*/
-	width:60% ;
+	width:40% ;
 	float:left;
-
 }
 
 #logo-img  {
@@ -116,24 +126,23 @@ header {
 
 #header-right{
 	width: 100%;
+	max-height: 500px;
+	overflow: auto;
 	background: none;
 	margin: 10px 0 10px 0;
-	overflow: auto;
 	height: 100%;
 }
 
 #logotextbox {
-	width:38%;
 	float:right;
 	background:#ffef4f;/*yellow*/
 	background: none;
  	overflow:auto;
 	border-top: 9px solid #992606;/*med-red*/
-
 }
 
 #contact-b {
-	width:38%;
+	width:32%;
 	float:right;
 	/*background: #fff9a6;*/
 }
@@ -156,14 +165,37 @@ header {
   padding-top: 1%;
 }
 
+
+
+#skill-icon{
+	margin-top: 40px;
+	width: 100%;
+	clear: both;
+	margin: auto;
+	background: #f1eb9d;/*verylightyellow*/
+	border: 20px solid #ffef4f;/*brightlightyellow*/
+}
+
+#center-skills{
+	margin:auto;
+	border: 1px solid red;
+	width: auto;
+}
+
+#skill-icon img{
+	padding: 20px 0 20px 0;
+	max-width: 155px;
+	display: inline;
+
+}
+
 #intro2 {
-	position:relative;
+
 	width: 100%;
 	clear: both;
 	margin:10px auto 20px auto;
 	margin-top: 20px;
 	overflow: auto;;
-	background: #fff9a6;/* very light yellow */
 	border-image: url(../images/bg-intro-f.gif) 0 0 0 0 fill  stretch;
 	overflow:auto;
 }
@@ -172,6 +204,7 @@ header {
 	font-variant: normal;
 	margin-left: 18%;
 	margin-right: 15%;
+	color:#680002;/*darkred*/
 
 }
 
@@ -196,9 +229,11 @@ header {
 	margin: auto;
 }
 
-
-
 #tools{
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 500;
 	display: block;
 	clear:both;
 	width: 100%;
@@ -208,15 +243,14 @@ sample-box{
 	width:100%;
 }
 #w-sample-c{
-	float:left;
+	float:right;
 	width:49%;
 	min-height: 400px;
 }
 
-
 #w-sample-wp{
 	max-width: 100%;
-	float:right;
+	float:left;
 	width:49%;
 	overflow: hidden;
 }
@@ -226,13 +260,19 @@ sample-box{
 	float:left;
 	width:49%;
 	overflow: hidden;
+}
 
+#w-sample-d{
+	max-width: 100%;
+	float:right;
+	width:49%;
+	overflow: hidden;
 }
 
 .img-sample{
 	position: relative;
 	width: 100%;
-	display: inline-block;
+	display: block;
 	overflow: hidden;
 }
 
@@ -243,16 +283,21 @@ sample-box{
 
 .img-sample img:hover {
 		cursor:pointer;
-		transform: scale(1.15);
+		transform: scale(1.2);
+
 }
 
 .img-sample h3{
+	font-size: 170%;
 	position: absolute;
-	top: 180px;
-	left: -34px;
+	top: -50px;
+	left: 0px;
 	width: 100%;
 	text-align: left;
 	z-index: 100;
+	background: rgba(255,255,255,.6);
+	padding-bottom: 30%;
+
 }
 
 .img-sample h3 span {
@@ -260,27 +305,42 @@ sample-box{
    letter-spacing: 0;
    background: rgb(104, 0, 2); /* fallback color */
    background: rgba(104, 0, 2, 0.8);/* dark red rgb */
-	 background: rgba(0, 0, 2, 0.8);
+	 background: rgba(0, 0, 2, 1);
    padding: 6px 20px 6px 20px;
 	 font-size: 1.2em;
+	 -webkit-box-shadow: 10px 10px 0px 10px rgba(255,239,79,1);
+	 -moz-box-shadow: 10px 10px 0px 10px rgba(255,239,79,1);
+	 box-shadow: 10px 10px 0px 10px rgba(255,239,79,1);
+
+}
+span.spacer{
+	border-bottom-right-radius: 100%;
+	padding-right: 35px !important
 }
 
 .img-sample p{
 	position: absolute;
-	top: 290px;
+	top: 70px;
 	left: 0;
-	line-height: 2.3em;
+	line-height: 1.0em;
 	text-align: left;
 	z-index: 100;
-
 }
 
 .img-sample p span{
+	font-style:
 	display: inline;
 	color:white;
 	padding: 10px 10px 10px 10px;
 	background:rgb(183,242,246); /*  RGB lightblue*/
-	background: rgba(104, 0, 2, 0.8);/* dark red rgb */
+	background: rgba(104, 0, 2, 1);/* dark red rgb */
+ /*background: rgba(0, 0, 2, 0.9);*/
+border-bottom: 7px solid rgba(255,239,79,1);
+}
+
+#gal-slider{
+	width: 100%;
+	clear: both;
 }
 
 /* **********************work Sample styles **********/
@@ -310,18 +370,21 @@ sample-box{
  }
 
 
- h5:hover, nav ul li.nav-on a   {
-  		/*text-transform:capitalize;
-     font-variant:small-caps;
-     color:black;
-     font-size:1.4em;
-     text-decoration: underline;*/
-    }
+h5:hover, nav ul li.nav-on a   {
+		/*text-transform:capitalize;
+   font-variant:small-caps;
+   color:black;
+   font-size:1.4em;
+   text-decoration: underline;*/
+  }
+
 img {
 	display:inline;
 	max-width:100%;
-
 	z-index: 1;
+	-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
 }
 
 #bio {

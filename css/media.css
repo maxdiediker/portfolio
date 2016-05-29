@@ -31,21 +31,42 @@
   }
 
   #wrapper {
-  width:80%;
+  width:70%;
   }
 
   h3{
-      font-size: 2.0em;
+      font-size: 1.4em;
   }
   #header-right{
-    width:40%;
+    width:60%;
     float:right;
   }
   #logotextbox{
-    width: 100%;
+    width: 70%;
+  }
+
+  #logotextbox h3{
+    text-align: right;
+    line-height: 1.2em;
   }
   #contact-b{
-    width: 100%;
+    width: 50%;
+  }
+  #intro2{
+    margin-top: 20px;
+    width: 80%;
+  }
+  #intro2 h3{
+    font-size: 1.2em;
+  }
+
+.img-sample p{
+ top: 100px;
+ left: 0;
+  }
+
+  #skill-icon img{
+    width: 12%;
   }
 }
 
@@ -77,7 +98,7 @@
   }
 
   #wrapper {
-  width:90%;
+  width:85%;
   }
 
   #header-right{
@@ -92,13 +113,39 @@
   }
 
   #intro2{
+    margin-top: 20px;
     width: 70%;
   }
   #intro2 h3 {
   	z-index: 2;
-  	font-size: 180%;
+  	font-size: 140%;
   	padding: 2%;
   }
+
+  .img-sample h3{
+  	font-size: 170%;
+  	position: absolute;
+  	top: -30px;
+  	left: 0px;
+  	width: 100%;
+  	text-align: left;
+  	z-index: 100;
+  }
+
+  .img-sample p{
+   top: 100px;
+   left: 50px;
+    }
+
+    #logotextbox h3{
+      text-align: right;
+      line-height: 1.2em;
+    }
+
+    #skill-icon img{
+      width: 12%;
+    }
+
 }
 
 @media screen and (min-width:761px) and (max-width: 999px) {
@@ -134,46 +181,62 @@
   }
 
   #header-left {
-    width:100%;
-    float: none;
+    width:40%;
+    float: left;
     margin: auto;
   }
   #header-right {
+    width:59%;
+    float: right;
+    margin: auto;
+  }
+
+  #logo-img{
     width:100%;
     float: none;
     margin: auto;
   }
-  #logo-img{
-    width:55%;
-    float: none;
-    margin: auto;
-  }
 
-  #menu-fixed{
-   top:762px;
-   right:0px;
-  }
 
-  #res-cont{
-    margin-top: 20px;
-  }
-
-  #logotextbox {
-   float:left;
-   margin:auto;
-   width:40%;
-   margin-top: 10px;
+#logotextbox {
+ float:left;
+ margin:auto;
+ width:49%;
+ margin-top: 11%;
  }
 
+ #contact-b{
+  width:49%;
+  margin-top: 10%;
+ }
+ #logotextbox h3{
+font-size: 1.0em;
+}
+
  #intro2{
+   clear:both;
    width:75%;
  }
 
  #intro2 h3 {
   z-index: 2;
-  font-size: 120%;
-  padding: 3%;
+  font-size: 100%;
  }
+
+ .img-sample h3{
+   font-size: 120%;
+   position: absolute;
+   top: -30px;
+   left: 0;
+   width: 100%;
+   text-align: left;
+   z-index: 100;
+ }
+
+ .img-sample p{
+  top: 80px;
+  left: 50px;
+   }
 
 }
 
@@ -249,6 +312,12 @@
   	width:100%;
   }
 
+  #w-sample-d{
+    float:none;
+    width:100%;
+  }
+
+
   #w-sample-wp{
   	float:none;
   	width:100%;
@@ -260,6 +329,26 @@
   	width:100%;
 
   }
+  .img-sample h3{
+  	font-size: 150%;
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 100%;
+  	text-align: left;
+  	z-index: 100;
+  }
+
+
+ .img-sample p{
+  top: 150px;
+  left: 50px;
+   }
+
+   #skill-icon img{
+   	width: 24%;
+   }
+
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -351,24 +440,41 @@ body{
 
  #w-sample-c{
   float:none;
-  width:80%;
+  width:100%;
   margin:auto;
  }
 
  #w-sample-wp{
   float:none;
   width:100%;
+ }
 
+ #w-sample-d{
+  float:none;
+  width:100%;
  }
 
  #w-sample-a{
   float:none;
   width:100%;
-
  }
 
+ .img-sample h3{
+  font-size: 100%;
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  width: 100%;
+  text-align: left;
+  z-index: 100;
+ }
+ .img-sample p{
+  top: 70px;
+  left: 50px;
+   }
 
-
-
+   #skill-icon img{
+     width: 24%;
+   }
 
 }
